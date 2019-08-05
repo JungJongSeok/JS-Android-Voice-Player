@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/content_main_record_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Voice Recorder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/content_main_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="00:00"
+        app:layout_constraintBottom_toBottomOf="@id/content_main_record_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/content_main_record_button" />
+
+    <Button
+        android:id="@+id/content_main_record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="Record"
+        app:layout_constraintBottom_toBottomOf="@id/content_main_record_stop_button"
+        app:layout_constraintEnd_toStartOf="@id/content_main_record_stop_button"
+        app:layout_constraintTop_toTopOf="@id/content_main_record_stop_button" />
+
+    <Button
+        android:id="@+id/content_main_record_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="stop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_main_record_title" />
+
+    <TextView
+        android:id="@+id/content_main_player_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Voice Player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_main_record_button" />
+
+
+    <TextView
+        android:id="@+id/content_main_player_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="00:00"
+        app:layout_constraintBottom_toBottomOf="@id/content_main_player_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/content_main_player_button" />
+
+    <Button
+        android:id="@+id/content_main_player_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="@id/content_main_player_stop_button"
+        app:layout_constraintEnd_toStartOf="@id/content_main_player_stop_button"
+        app:layout_constraintTop_toTopOf="@id/content_main_player_stop_button" />
+
+    <Button
+        android:id="@+id/content_main_player_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="stop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_main_player_title" />
+
+</android.support.constraint.ConstraintLayout>
